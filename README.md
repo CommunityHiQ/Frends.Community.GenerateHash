@@ -15,14 +15,14 @@ FRENDS community task for generating strings to chosen HashAlgorithm type.
 
 ## Installing
 You can install the task via FRENDS UI Task view or you can find the nuget package from the following nuget feed
-https://www.myget.org/F/frends/api/v3
+'https://www.myget.org/F/frends/api/v3'
 
 ## Building
-Ensure that you have https://www.myget.org/F/frends/api/v3 added to your nuget feeds
+Ensure that you have 'https://www.myget.org/F/frends/api/v3' added to your nuget feeds
 
 Clone a copy of the repo
 
-git clone https://github.com/CommunityHiQ/FRENDS.Community.Encyption.git
+git clone 'https://github.com/CommunityHiQ/FRENDS.Community.Encyption.git'
 
 Restore dependencies
 
@@ -64,7 +64,7 @@ Generates input string to chosen HashAlgorithm type.
 
 #### Options
 | Property  | Type  | Description |Example|
-|-----------|-------|-------------|
+|-----------|-------|-------------|-------|
 | HashFunction  | enum(typeOf(Function)) | Generates input string to chosen HashAlgorithm type. | MD5|
 
 #### Example usage

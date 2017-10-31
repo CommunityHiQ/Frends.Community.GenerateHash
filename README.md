@@ -58,20 +58,20 @@ Generates input string to chosen HashAlgorithm type.
 ### Task Properties
 
 #### Input
-| Property  | Type  | Description |Example|
-|-----------|-------|-------------|-------|
+| Property             | Type                 | Description                          | Example |
+| ---------------------| ---------------------| ------------------------------------ | ----- |
 | InputString  | string | Input string to be hashed. | "some text to be hashed"|
 
 #### Options
-| Property  | Type  | Description |Example|
-|-----------|-------|-------------|-------|
+| Property             | Type                 | Description                          | Example |
+| ---------------------| ---------------------| ------------------------------------ | ----- |
 | HashFunction  | enum(typeOf(Function)) | Generates input string to chosen HashAlgorithm type. | MD5|
 
 #### Example usage
 
 #### Result
-| Property  | Type  | Description |Example|
-|-----------|-------|-------------|-------|
+| Property             | Type                 | Description                          | Example |
+| ---------------------| ---------------------| ------------------------------------ | ----- |
 | HashResult| string  | Returns Result string. |be0a5b7c090f4e08902758d79cf1c9d2 |
 
 ## License

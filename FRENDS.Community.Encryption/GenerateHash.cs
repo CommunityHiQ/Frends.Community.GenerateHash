@@ -56,12 +56,12 @@ namespace FRENDS.Community.Encryption
     public class Hash
     {
         /// <summary>
-        /// Generates input string to chosen HashAlgorithm type.
+        /// Calculates hash from input using selected algorithm.
         /// </summary>
         /// <param name="input">input string</param>
         /// <param name="options">Options for choosing HashAlgorithm type</param>
         /// <param name="cToken">Cancellation token checks if process cancellation has been requested</param>
-        /// <returns>String</returns>
+        /// <returns>Object {string Hash}</returns>
         public static Result GenerateHash(Input input, Options options, CancellationToken cToken)
         {
             cToken.ThrowIfCancellationRequested();

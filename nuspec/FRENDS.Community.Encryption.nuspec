@@ -9,7 +9,7 @@
 		<description>Generates input string to chosen HashAlgorithm type.</description>
 		<summary />
 		<dependencies>
-			<dependency id="Frends.Tasks.Attributes" version="[1.2.0]" />
+			<dependency id="Frends.Tasks.Attributes" version="[1.2.1]" />
 		</dependencies>
 		<frameworkAssemblies>
 			<frameworkAssembly assemblyName="System.ComponentModel" />

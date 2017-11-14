@@ -34,9 +34,9 @@ Run Tests with nunit. Tests can be found under
 
 FRENDS.Community.Encryption\bin\Release\FRENDS.Community.Encryption.Tests.dll
 
-Create a nuget package
+Create a nuget package, eg.:
 
-nuget pack nuspec/FRENDS.Community.Encryption.nuspec`
+`nuget pack nuspec/FRENDS.Community.Encryption.nuspec`
 
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
@@ -53,7 +53,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 ### GenerateHash
 
-Generates input string to chosen HashAlgorithm type.
+Calculates hash from input using selected algorithm.
 
 ### Task Properties
 

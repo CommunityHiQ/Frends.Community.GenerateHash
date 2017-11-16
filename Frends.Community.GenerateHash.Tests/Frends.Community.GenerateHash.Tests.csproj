@@ -52,7 +52,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FRENDS.Community.Encryption\Frends.Community.GenerateHash.csproj">
+    <ProjectReference Include="..\Frends.Community.GenerateHash\Frends.Community.GenerateHash.csproj">
       <Project>{97d07b5f-7d31-4d07-b89a-f4087ebeb82b}</Project>
       <Name>Frends.Community.GenerateHash</Name>
     </ProjectReference>

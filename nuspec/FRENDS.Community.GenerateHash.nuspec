@@ -3,7 +3,7 @@
 	<metadata>
 		<id>Frends.Community.GenerateHash</id>
 		<version>1.1.0</version>
-		<title>FRENDS Community GenerateHash</title>
+		<title>Frends Community GenerateHash</title>
 		<authors>HiQ Finland</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Calculates hash from input using selected algorithm.</description>
@@ -20,7 +20,7 @@
 		</frameworkAssemblies>
 	</metadata>
 	<files>
-		<file src="..\FRENDS.Community.Encryption\bin\release\Frends.Community.GenerateHash.dll" target="lib\net45\Frends.Community.GenerateHash.dll" />
-		<file src="..\FRENDS.Community.Encryption\bin\release\Frends.Community.GenerateHash.XML" target="lib\net45\Frends.Community.GenerateHash.XML" />
+		<file src="..\Frends.Community.Encryption\bin\release\Frends.Community.GenerateHash.dll" target="lib\net45\Frends.Community.GenerateHash.dll" />
+		<file src="..\Frends.Community.Encryption\bin\release\Frends.Community.GenerateHash.XML" target="lib\net45\Frends.Community.GenerateHash.XML" />
 	</files>
 </package>

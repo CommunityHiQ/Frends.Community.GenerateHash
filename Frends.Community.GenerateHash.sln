@@ -1,13 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.GenerateHash", "FRENDS.Community.Encryption\Frends.Community.GenerateHash.csproj", "{97D07B5F-7D31-4D07-B89A-F4087EBEB82B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{2238146A-EABB-4391-A460-0F2A786A31A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{2238146A-EABB-4391-A460-0F2A786A31A5}"
 	ProjectSection(SolutionItems) = preProject
-		nuspec\FRENDS.Community.GenerateHash.nuspec = nuspec\FRENDS.Community.GenerateHash.nuspec
+		nuspec\Frends.Community.GenerateHash.nuspec = nuspec\Frends.Community.GenerateHash.nuspec
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.GenerateHash.Tests", "FRENDS.Community.Encryption.Tests\Frends.Community.GenerateHash.Tests.csproj", "{067456C0-086C-46A8-B37F-1405717B7BFC}"

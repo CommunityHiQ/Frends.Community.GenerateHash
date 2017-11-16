@@ -3,13 +3,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading;
 
 namespace FRENDS.Community.GenerateHash
 {
-    /// <summary>
-    /// Input class
-    /// </summary>
     public class Input
     {
         /// <summary>
@@ -27,9 +23,7 @@ namespace FRENDS.Community.GenerateHash
     public enum Function { MD5, RIPEMD160, SHA1, SHA256, SHA384, SHA512 }
 #pragma warning restore
 
-    /// <summary>
-    /// Options class
-    /// </summary>
+
     public class Options
     {
         /// <summary>
@@ -39,9 +33,6 @@ namespace FRENDS.Community.GenerateHash
         public Function HashFunction { get; set; }
     }
 
-    /// <summary>
-    /// Result class
-    /// </summary>
     public class Result
     {
         /// <summary>
@@ -50,9 +41,6 @@ namespace FRENDS.Community.GenerateHash
         public string Hash { get; set; }
     }
 
-    /// <summary>
-    /// Hash class
-    /// </summary>
     public class Hash
     {
         /// <summary>
@@ -60,12 +48,9 @@ namespace FRENDS.Community.GenerateHash
         /// </summary>
         /// <param name="input">input string</param>
         /// <param name="options">Options for choosing HashAlgorithm type</param>
-        /// <param name="cToken">Cancellation token checks if process cancellation has been requested</param>
         /// <returns>Object {string Hash}</returns>
-        public static Result GenerateHash(Input input, Options options, CancellationToken cToken)
+        public static Result GenerateHash(Input input, Options options)
         {
-            cToken.ThrowIfCancellationRequested();
-
             var result = new Result();
             var hash = HashAlgorithm.Create("System.Security.Cryptography." + options.HashFunction);
             byte[] bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(input.InputString));

@@ -45,7 +45,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FRENDS.Community.GenerateHash.Tests.cs" />
+    <Compile Include="GenerateHashTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

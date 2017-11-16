@@ -1,4 +1,4 @@
-- [FRENDS.Community.Encryption](#frends.community.encryption)
+- [Frends.Community.GenerateHash](#frends.community.generateHash)
    - [Installing](#installing)
    - [Building](#building)
    - [Contributing](#contributing)
@@ -10,7 +10,7 @@
 	   - [Example usage](#exampleusage)
 	   - [Result](#result)
 
-# FRENDS.Community.Encryption
+# Frends.Community.GenerateHash
 FRENDS community task for generating strings to chosen HashAlgorithm type.
 
 ## Installing
@@ -22,21 +22,21 @@ Ensure that you have 'https://www.myget.org/F/frends/api/v3' added to your nuget
 
 Clone a copy of the repo
 
-git clone 'https://github.com/CommunityHiQ/FRENDS.Community.Encyption.git'
+git clone 'https://github.com/CommunityHiQ/Frends.Community.GenerateHash.git'
 
 Restore dependencies
 
-nuget restore FRENDS.Community.Encryption
+nuget restore FRENDS.Community.GenerateHash
 
 Rebuild the project
 
 Run Tests with nunit. Tests can be found under
 
-FRENDS.Community.Encryption\bin\Release\FRENDS.Community.Encryption.Tests.dll
+Frends.Community.GenerateHash\bin\Release\Frends.Community.GenerateHash.Tests.dll
 
 Create a nuget package, eg.:
 
-`nuget pack nuspec/FRENDS.Community.Encryption.nuspec`
+`nuget pack nuspec/FRENDS.Community.GenerateHash.nuspec`
 
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.

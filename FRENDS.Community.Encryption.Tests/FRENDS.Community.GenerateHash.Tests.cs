@@ -1,8 +1,8 @@
-﻿using FRENDS.Community.Encryption;
+﻿using FRENDS.Community.GenerateHash;
 using NUnit.Framework;
 using System.Threading;
 
-namespace FRENDS.Community.Encryption.Tests
+namespace FRENDS.Community.GenerateHash.Tests
 {
     [TestFixture]
     class HashTests

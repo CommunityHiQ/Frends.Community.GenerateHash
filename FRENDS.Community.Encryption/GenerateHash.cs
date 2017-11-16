@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 
-namespace FRENDS.Community.Encryption
+namespace FRENDS.Community.GenerateHash
 {
     /// <summary>
     /// Input class

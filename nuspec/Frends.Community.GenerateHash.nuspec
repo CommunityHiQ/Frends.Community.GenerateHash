@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Frends.Community.GenerateHash</id>
-		<version>1.1.0</version>
+		<version>1.2.0</version>
 		<title>Frends Community GenerateHash</title>
 		<authors>HiQ Finland</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,7 +18,8 @@
 			<frameworkAssembly assemblyName="System.Text" />
 			<frameworkAssembly assemblyName="System.Threading" />
 		</frameworkAssemblies>
-	</metadata>
+    <releaseNotes>Added HMACSHA256 support</releaseNotes>
+  </metadata>
 	<files>
 		<file src="..\Frends.Community.Encryption\bin\release\Frends.Community.GenerateHash.dll" target="lib\net45\Frends.Community.GenerateHash.dll" />
 		<file src="..\Frends.Community.Encryption\bin\release\Frends.Community.GenerateHash.XML" target="lib\net45\Frends.Community.GenerateHash.XML" />

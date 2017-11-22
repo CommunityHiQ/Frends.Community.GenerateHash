@@ -14,13 +14,18 @@ namespace FRENDS.Community.GenerateHash
         [DefaultValue(@"foobar")]
         [DefaultDisplayType(DisplayType.Text)]
         public string InputString { get; set; }
+
+        [DefaultValue("")]
+        [ConditionalDisplay(nameof(Function), Function.HMACSHA256)]
+        [PasswordPropertyText]
+        public string HashKey { get; set; }
     }
 
     /// <summary>
     /// Enum for choosing HashAlgorithm type
     /// </summary>
 #pragma warning disable
-    public enum Function { MD5, RIPEMD160, SHA1, SHA256, SHA384, SHA512 }
+    public enum Function { MD5, RIPEMD160, SHA1, SHA256, SHA384, SHA512, HMACSHA256 }
 #pragma warning restore
 
 
@@ -51,9 +56,22 @@ namespace FRENDS.Community.GenerateHash
         /// <returns>Object {string Hash}</returns>
         public static Result GenerateHash(Input input, Options options)
         {
+            HashAlgorithm hash;
             var result = new Result();
-            var hash = HashAlgorithm.Create("System.Security.Cryptography." + options.HashFunction);
-            byte[] bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(input.InputString));
+            byte[] bytes;
+
+            if (options.HashFunction == Function.HMACSHA256)
+            {
+                var p = KeyedHashAlgorithm.Create("System.Security.Cryptography." + options.HashFunction);
+                p.Key = Encoding.UTF8.GetBytes(input.HashKey);
+                hash = p as HashAlgorithm;
+            }
+            else
+            {
+                hash = HashAlgorithm.Create("System.Security.Cryptography." + options.HashFunction);
+            }
+
+            bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(input.InputString));
 
             var sBuilder = new StringBuilder();
             bytes.ToList().ForEach(b => sBuilder.Append(b.ToString("x2")));

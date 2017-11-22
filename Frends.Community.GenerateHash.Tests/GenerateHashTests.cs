@@ -62,5 +62,16 @@ namespace FRENDS.Community.GenerateHash.Tests
             result = Hash.GenerateHash(input, options);
             Assert.AreEqual("a06e327ea7388c18e4740e350ed4e60f2e04fc41", result.Hash);
         }
+
+        [Test]
+        public void Hashes_HMACSHA256()
+        {
+            var input = new Input { InputString = "foobar", HashKey = "kekkeroos" };
+            var options = new Options { HashFunction = Function.HMACSHA256 };
+
+            Result result = Hash.GenerateHash(input, options);
+
+            Assert.AreEqual("a769ca28fa0c7242bcc9aa536f3b1fd7874c765b7b4789eaff65e474f4ce6e56", result.Hash);
+        }
     }
 }

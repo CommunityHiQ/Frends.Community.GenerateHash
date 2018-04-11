@@ -1,5 +1,5 @@
-﻿using Frends.Tasks.Attributes;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -12,11 +12,11 @@ namespace FRENDS.Community.GenerateHash
         /// Input string to be hashed.
         /// </summary>
         [DefaultValue(@"foobar")]
-        [DefaultDisplayType(DisplayType.Text)]
+        [DisplayFormat(DataFormatString = "Text")]
         public string InputString { get; set; }
 
         [DefaultValue("")]
-        [ConditionalDisplay(nameof(Function), Function.HMACSHA256)]
+        [UIHint(nameof(Function), "", Function.HMACSHA256)]
         [PasswordPropertyText]
         public string HashKey { get; set; }
     }

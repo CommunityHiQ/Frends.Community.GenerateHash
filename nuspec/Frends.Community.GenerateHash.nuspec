@@ -2,14 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Frends.Community.GenerateHash</id>
-		<version>1.4.0</version>
+		<version>1.5.0</version>
 		<title>Frends Community GenerateHash</title>
 		<authors>HiQ Finland</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Calculates hash from input using selected algorithm.</description>
 		<summary />
 		<dependencies>
-			<dependency id="Frends.Tasks.Attributes" version="1.2.0" />
 		</dependencies>
 		<frameworkAssemblies>
 			<frameworkAssembly assemblyName="System.ComponentModel" />

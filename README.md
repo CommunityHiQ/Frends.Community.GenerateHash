@@ -71,8 +71,8 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 # Change Log
 | Version | Changes |
 | ----- | ----- |
-| 1.4.0 | Use Frends.Tasks.Attributes version 1.2.0 instead of 1.2.1, re-structured README.md |
-| 1.5.0 | Added option to use HMAC SHA 512 |
+| 1.5.0 | Use Frends.Tasks.Attributes version 1.2.0 instead of 1.2.1, re-structured README.md |
+| 1.6.0 | Added option to use HMAC SHA 512 |
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details

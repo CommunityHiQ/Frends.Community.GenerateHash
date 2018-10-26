@@ -49,7 +49,7 @@ namespace FRENDS.Community.GenerateHash
     public class Hash
     {
         /// <summary>
-        /// Calculates hash from input using selected algorithm.
+        /// Calculates hash from input using selected algorithm. See: https://github.com/CommunityHiQ/Frends.Community.GenerateHash
         /// </summary>
         /// <param name="input">input string</param>
         /// <param name="options">Options for choosing HashAlgorithm type</param>

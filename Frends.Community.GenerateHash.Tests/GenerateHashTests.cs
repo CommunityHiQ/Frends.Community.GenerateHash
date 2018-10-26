@@ -73,5 +73,15 @@ namespace FRENDS.Community.GenerateHash.Tests
 
             Assert.AreEqual("a769ca28fa0c7242bcc9aa536f3b1fd7874c765b7b4789eaff65e474f4ce6e56", result.Hash);
         }
+        [Test]
+        public void Hashes_HMACSHA512()
+        {
+            var input = new Input { InputString = "foobar", HashKey = "kekkeroos" };
+            var options = new Options { HashFunction = Function.HMACSHA512 };
+
+            Result result = Hash.GenerateHash(input, options);
+
+            Assert.AreEqual("20eabf2a44044559fd0299ed5967392f394be2609926d1c36a53823681f4a280a8f5f65e855c2d4655d3cba1c720c3a85ed9a77009b013eed85db710cdf0920b", result.Hash);
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace FRENDS.Community.GenerateHash
     /// Enum for choosing HashAlgorithm type
     /// </summary>
 #pragma warning disable
-    public enum Function { MD5, RIPEMD160, SHA1, SHA256, SHA384, SHA512, HMACSHA256 }
+    public enum Function { MD5, RIPEMD160, SHA1, SHA256, SHA384, SHA512, HMACSHA256, HMACSHA512 }
 #pragma warning restore
 
 
@@ -60,7 +60,7 @@ namespace FRENDS.Community.GenerateHash
             var result = new Result();
             byte[] bytes;
 
-            if (options.HashFunction == Function.HMACSHA256)
+            if (options.HashFunction == Function.HMACSHA256 || options.HashFunction == Function.HMACSHA512)
             {
                 var p = KeyedHashAlgorithm.Create("System.Security.Cryptography." + options.HashFunction);
                 p.Key = Encoding.UTF8.GetBytes(input.HashKey);

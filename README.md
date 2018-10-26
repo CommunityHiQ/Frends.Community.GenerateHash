@@ -17,7 +17,7 @@ You can install the task via FRENDS UI Task view or you can find the nuget packa
 
 ## GenerateHash
 
-Calculates hash from input using selected algorithm.
+Calculates hash from input using selected algorithm. Task support following algorithms: MD5, RIPEMD 160, SHA1, SHA 256, SHA 384, SHA 512, HMAC SHA 256 and HMAC SHA 512. 
 
 ### Task Properties
 
@@ -72,6 +72,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 | Version | Changes |
 | ----- | ----- |
 | 1.4.0 | Use Frends.Tasks.Attributes version 1.2.0 instead of 1.2.1, re-structured README.md |
+| 1.5.0 | Added option to use HMAC SHA 512 |
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details

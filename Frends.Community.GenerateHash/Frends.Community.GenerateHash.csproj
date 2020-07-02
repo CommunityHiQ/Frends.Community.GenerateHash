@@ -2,7 +2,7 @@
 
   <PropertyGroup>
 	<TargetFrameworks>netstandard2.0;net471</TargetFrameworks>
-    <description>This is template task.</description>
+    <description>FRENDS community task for generating strings to chosen HashAlgorithm type.</description>
     <authors>HiQ Finland</authors>
     <copyright>HiQ Finland</copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

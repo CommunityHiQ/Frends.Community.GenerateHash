@@ -1,6 +1,6 @@
 # Frends.Community.GenerateHash
 
-FRENDS Community Task for Hash
+FRENDS community task for generating strings to chosen HashAlgorithm type.
 
 [![Actions Status](https://github.com/CommunityHiQ/Frends.Community.GenerateHash/workflows/PackAndPushAfterMerge/badge.svg)](https://github.com/CommunityHiQ/Frends.Community.GenerateHash/actions) ![MyGet](https://img.shields.io/myget/frends-community/v/Frends.Community.GenerateHash) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 

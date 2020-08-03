@@ -25,8 +25,8 @@ Calculates hash from input using selected algorithm. Task support following algo
 ### Task Properties
 
 #### Input
-| Property             | Type                 | Description                          | Example |
-| ---------------------| ---------------------| ------------------------------------ | ----- |
+| Property             | Type                 | Description                         | Example |
+| ---------------------| ---------------------| ----------------------------------- | ----- |
 | InputString  | string | Input string to be hashed. | "some text to be hashed"|
 
 #### Options

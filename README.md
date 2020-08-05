@@ -1,17 +1,20 @@
 # Frends.Community.GenerateHash
+
 FRENDS community task for generating strings to chosen HashAlgorithm type.
+
+[![Actions Status](https://github.com/CommunityHiQ/Frends.Community.GenerateHash/workflows/PackAndPushAfterMerge/badge.svg)](https://github.com/CommunityHiQ/Frends.Community.GenerateHash/actions) ![MyGet](https://img.shields.io/myget/frends-community/v/Frends.Community.GenerateHash) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 - [Installing](#installing)
 - [Tasks](#tasks)
-    - [GenerateHash](#generateHash)
+     - [GenerateHash](#generateHash)
 - [Building](#building)
 - [Contributing](#contributing)
 - [Change Log](#change-log)
-- [License](#license)
 
 # Installing
-You can install the task via FRENDS UI Task view or you can find the nuget package from the following nuget feed
-'https://www.myget.org/F/frends/api/v3'
+
+You can install the task via FRENDS UI Task View or you can find the NuGet package from the following NuGet feed
+https://www.myget.org/F/frends-community/api/v3/index.json and in Gallery view in MyGet https://www.myget.org/feed/frends-community/package/nuget/Frends.Community.GenerateHash
 
 # Tasks
 
@@ -22,8 +25,8 @@ Calculates hash from input using selected algorithm. Task support following algo
 ### Task Properties
 
 #### Input
-| Property             | Type                 | Description                          | Example |
-| ---------------------| ---------------------| ------------------------------------ | ----- |
+| Property             | Type                 | Description                         | Example |
+| ---------------------| ---------------------| ----------------------------------- | ----- |
 | InputString  | string | Input string to be hashed. | "some text to be hashed"|
 
 #### Options
@@ -37,25 +40,22 @@ Calculates hash from input using selected algorithm. Task support following algo
 | HashResult| string  | Returns Result string. |be0a5b7c090f4e08902758d79cf1c9d2 |
 
 # Building
-Ensure that you have 'https://www.myget.org/F/frends/api/v3' added to your nuget feeds
 
 Clone a copy of the repo
 
 `git clone https://github.com/CommunityHiQ/Frends.Community.GenerateHash.git`
 
-Restore dependencies
-
-`nuget restore FRENDS.Community.GenerateHash`
-
 Rebuild the project
 
-Run Tests with nunit. Tests can be found under
+`dotnet build`
 
-`Frends.Community.GenerateHash\bin\Release\Frends.Community.GenerateHash.Tests.dll`
+Run Tests
 
-Create a nuget package, eg.:
+`dotnet test`
 
-`nuget pack nuspec/FRENDS.Community.GenerateHash.nuspec`
+Create a NuGet package
+
+`dotnet pack --configuration Release`
 
 # Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
@@ -73,6 +73,4 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 | ----- | ----- |
 | 1.5.0 | Use Frends.Tasks.Attributes version 1.2.0 instead of 1.2.1, re-structured README.md |
 | 1.6.0 | Added option to use HMAC SHA 512 |
-
-# License
-This project is licensed under the MIT License - see the LICENSE file for details
+| 1.7.0 | Multi-framework and Github actions support |

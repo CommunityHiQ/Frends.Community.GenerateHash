@@ -1,0 +1,7 @@
+﻿{
+	"Tasks": [
+		{
+			"TaskMethod": "FRENDS.Community.GenerateHash.Hash.GenerateHash"
+		}
+	]
+}

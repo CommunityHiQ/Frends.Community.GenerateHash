@@ -5,8 +5,8 @@ namespace FRENDS.Community.GenerateHash.Tests
     [TestFixture]
     class GenerateHashTests
     {
-        Input input = new Input();
-        Options options = new Options();
+        readonly Input input = new Input();
+        readonly Options options = new Options();
         Result result = new Result();
 
         [SetUp]

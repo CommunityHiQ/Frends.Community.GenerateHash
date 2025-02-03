@@ -74,3 +74,4 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 | 1.5.0 | Use Frends.Tasks.Attributes version 1.2.0 instead of 1.2.1, re-structured README.md |
 | 1.6.0 | Added option to use HMAC SHA 512 |
 | 1.7.0 | Multi-framework and Github actions support |
+| 2.0.0 | Targeted to .NET6 and 8 and updated Microsoft.CSharp to 4.7.0 and System.ComponentModel.Annotations to 5.0.0. |
